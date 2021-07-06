@@ -3,7 +3,7 @@ import TodoItem from './TodoItem';
 
 const App = () => (
   <div className="app-container">
-    <h1>My React App</h1>
+    <h1>Todo App</h1>
     <TodoItem />
     <TodoItem />
     <TodoItem />
