@@ -2,17 +2,23 @@ import React from 'react';
 
 const TodoItem = () => (
   <div>
-    <input type="checkbox" />
-    Run
-    <p> - 1 mile around the park</p>
+    <div>
+      <input type="checkbox" />
+      Run
+      <span> - 1 mile around the park</span>
+    </div>
 
-    <input type="checkbox" />
-    Work
-    <p> - Finish project by tonight</p>
+    <div>
+      <input type="checkbox" />
+      Work
+      <span> - Finish project by tonight</span>
+    </div>
 
-    <input type="checkbox" />
-    Sleep
-    <p> - Go to bed at 8</p>
+    <div>
+      <input type="checkbox" />
+      Sleep
+      <span> - Go to bed at 8</span>
+    </div>
   </div>
 );
 
