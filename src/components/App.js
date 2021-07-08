@@ -6,16 +6,21 @@ const App = () => {
   const [todo, setTodo] = useState(todoData);
 
   const handleChange = (id) => {
-    setTodo((prevTodos) => {
-      prevTodos = prevTodos.map((item) => {
-        if (item.id === id) item.completed = !item.completed;
+    setTodo((prevTodo) => {
+      const updatedTodo = prevTodo.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            completed: !item.completed,
+          };
+        }
         return item;
       });
-      return prevTodos;
+      return updatedTodo;
     });
   };
 
-  const todos = todoData.map(
+  const todos = todo.map(
     (item) => <TodoItem key={item.id} item={item} handleChange={handleChange} />,
   );
 

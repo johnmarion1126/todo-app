@@ -3,13 +3,13 @@ const todo = [
     id: 1,
     title: 'Run',
     description: '1 mile around the park',
-    completed: true,
+    completed: false,
   },
   {
     id: 2,
     title: 'Work',
     description: 'Finish project',
-    completed: true,
+    completed: false,
   },
   {
     id: 3,
