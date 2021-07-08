@@ -1,17 +1,17 @@
 import React from 'react';
 
 const TodoItem = (props) => {
-  const { title, description } = props;
+  const { item } = props;
 
   return (
     <div className="todo-container">
-      <input type="checkbox" />
-      {title}
+      <input type="checkbox" checked={item.completed} />
+      {item.title}
       <span>
         {' '}
         -
         {' '}
-        {description}
+        {item.description}
       </span>
     </div>
   );

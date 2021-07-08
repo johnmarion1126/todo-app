@@ -4,7 +4,7 @@ import todoData from './todosData';
 
 const App = () => {
   const todos = todoData.map(
-    (todo) => <TodoItem key={todo.id} title={todo.title} description={todo.description} />,
+    (todo) => <TodoItem key={todo.id} item={todo} />,
   );
 
   return (
