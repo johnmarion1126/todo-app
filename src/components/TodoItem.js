@@ -17,12 +17,9 @@ const TodoItem = (props) => {
         onChange={() => handleChange(item.id)}
       />
       <span style={item.completed ? completedStyle : null}>
-        {item.title}
-        {' '}
-        -
-        {' '}
         {item.description}
       </span>
+      { item.completed ? <button className="delete-btn" type="button"> x </button> : null }
     </div>
   );
 };

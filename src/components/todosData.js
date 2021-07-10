@@ -1,20 +1,17 @@
 const todo = [
   {
     id: 1,
-    title: 'Run',
-    description: '1 mile around the park',
+    description: 'Run',
     completed: false,
   },
   {
     id: 2,
-    title: 'Work',
-    description: 'Finish project',
+    description: 'Work',
     completed: false,
   },
   {
     id: 3,
-    title: 'Buy Food',
-    description: 'Get eggs and milk',
+    description: 'Buy Food',
     completed: false,
   },
 ];
