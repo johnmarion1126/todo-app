@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InputForm from './InputForm';
 import TodoItem from './TodoItem';
 import todoData from './todosData';
 
@@ -36,6 +37,7 @@ const App = () => {
         handleChange={handleChange}
         handleDelete={handleDelete}
       />
+
     ),
   );
 
@@ -43,6 +45,7 @@ const App = () => {
     <div className="app-container">
       <h1>Todo App</h1>
       {todos}
+      <InputForm />
     </div>
   );
 };
