@@ -20,8 +20,23 @@ const App = () => {
     });
   };
 
+  const handleDelete = (id) => {
+    setTodo((prevTodo) => {
+      console.log(prevTodo);
+      const updatedTodo = prevTodo.filter((item) => item.id !== id);
+      return updatedTodo;
+    });
+  };
+
   const todos = todo.map(
-    (item) => <TodoItem key={item.id} item={item} handleChange={handleChange} />,
+    (item) => (
+      <TodoItem
+        key={item.id}
+        item={item}
+        handleChange={handleChange}
+        handleDelete={handleDelete}
+      />
+    ),
   );
 
   return (
