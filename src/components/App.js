@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import uniqid from 'uniqid';
 import InputForm from './InputForm';
 import TodoItem from './TodoItem';
 import todoData from './todosData';
-
-const uniqid = require('uniqid');
 
 const App = () => {
   const [todo, setTodo] = useState(todoData);
@@ -39,6 +38,7 @@ const App = () => {
       });
       return updatedTodo;
     });
+    console.log(todo);
   };
 
   const todos = todo.map(

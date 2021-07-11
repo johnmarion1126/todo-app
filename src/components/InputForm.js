@@ -22,7 +22,11 @@ const InputForm = (props) => {
         name="description"
         onChange={handleChange}
       />
-      <button type="button" onClick={handleSubmit}>
+      <button
+        className="btn add-btn"
+        type="button"
+        onClick={handleSubmit}
+      >
         +
       </button>
     </form>

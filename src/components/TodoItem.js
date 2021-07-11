@@ -22,7 +22,7 @@ const TodoItem = (props) => {
       { item.completed
         ? (
           <button
-            className="delete-btn"
+            className="btn"
             type="button"
             onClick={() => handleDelete(item.id)}
           >
