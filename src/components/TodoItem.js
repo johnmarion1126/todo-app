@@ -26,10 +26,7 @@ const TodoItem = (props) => {
             type="button"
             onClick={() => handleDelete(item.id)}
           >
-            {' '}
             x
-            {' '}
-
           </button>
         ) : null }
     </div>

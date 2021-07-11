@@ -3,6 +3,8 @@ import InputForm from './InputForm';
 import TodoItem from './TodoItem';
 import todoData from './todosData';
 
+const uniqid = require('uniqid');
+
 const App = () => {
   const [todo, setTodo] = useState(todoData);
 
@@ -23,8 +25,18 @@ const App = () => {
 
   const handleDelete = (id) => {
     setTodo((prevTodo) => {
-      console.log(prevTodo);
       const updatedTodo = prevTodo.filter((item) => item.id !== id);
+      return updatedTodo;
+    });
+  };
+
+  const handleAddTask = (description) => {
+    setTodo((prevTodo) => {
+      const updatedTodo = prevTodo.concat({
+        id: uniqid(),
+        description,
+        completed: false,
+      });
       return updatedTodo;
     });
   };
@@ -45,7 +57,7 @@ const App = () => {
     <div className="app-container">
       <h1>Todo App</h1>
       {todos}
-      <InputForm />
+      <InputForm handleAddTask={handleAddTask} />
     </div>
   );
 };
