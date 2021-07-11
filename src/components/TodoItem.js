@@ -14,7 +14,7 @@ const TodoItem = (props) => {
       <input
         type="checkbox"
         checked={item.completed}
-        onClick={() => handleChange(item.id)}
+        onChange={() => handleChange(item.id)}
       />
       <span style={item.completed ? completedStyle : null}>
         {item.description}
