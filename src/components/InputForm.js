@@ -11,7 +11,6 @@ const InputForm = (props) => {
   const handleSubmit = () => {
     handleAddTask(data);
     setData('');
-    document.getElementById('user-input').value = '';
   };
 
   return (
@@ -20,6 +19,7 @@ const InputForm = (props) => {
         id="user-input"
         type="text"
         name="description"
+        value={data}
         onChange={handleChange}
       />
       <button
