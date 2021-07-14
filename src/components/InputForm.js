@@ -16,7 +16,7 @@ const InputForm = (props) => {
   return (
     <form>
       <input
-        id="user-input"
+        className="user-input"
         type="text"
         name="description"
         value={data}

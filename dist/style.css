@@ -36,7 +36,7 @@ h1 {
 
 .btn {
   position: absolute;
-  left: 500px;
+  left: 850px;
   width: 20px;
   height: 20px;
   margin-top: 15px;
@@ -56,7 +56,7 @@ input {
 }
 
 /*Input Form*/
-#user-input {
+.user-input {
   padding: 5px;
   width: 320px;
   overflow-y: auto;
