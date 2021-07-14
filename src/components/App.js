@@ -65,12 +65,14 @@ const App = () => {
   return (
     <div className="app-container">
       <h1>
-        Todo App -
-        {month}
-        /
-        {date}
-        /
-        {year}
+        Todo App
+        <div className="date">
+          {month}
+          /
+          {date}
+          /
+          {year}
+        </div>
       </h1>
       {todos}
       <InputForm handleAddTask={handleAddTask} />
