@@ -9,6 +9,10 @@ const InputForm = (props) => {
   };
 
   const handleSubmit = () => {
+    if (data === '') {
+      alert('Input is empty');
+      return;
+    }
     handleAddTask(data);
     setData('');
   };
